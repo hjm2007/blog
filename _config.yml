@@ -3,18 +3,18 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: WinverDEV Site
 subtitle: ''
 description: ''
 keywords:
-author: John Doe
-language: en
-timezone: ''
+author: WinverDEV
+language: zh-TW
+timezone: 'UTC'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
-permalink: :year/:month/:day/:title/
+url: https://wdvblog.winverdev.eu.org/
+permalink: :tag/:year-:month-:day.wdv
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -96,9 +96,32 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+sitemap:
+  path: sitemap.xml
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+hub:
+  content:
+  content_limit:
+  content_limit_delim: ' '
+waline:
+  enable: true #是否开启
+  serverURL: https://comment.winverdev.eu.org/# Waline #服务端地址，我们这里就是上面部署的 Vercel 地址
+  placeholder: 请文明评论 # #评论框的默认文字
+  avatar: mm # 头像风格
+  meta: [nick, mail, link] # 自定义评论框上面的三个输入框的内容
+  pageSize: 10 # 评论数量多少时显示分页
+  lang: zh-tw # 语言, 可选值: en, zh-cn
+  # Warning: 不要同时启用 `waline.visitor` 以及 `leancloud_visitors`.
+  visitor: false # 文章阅读统计
+  comment_count: true # 如果为 false , 评论数量只会在当前评论页面显示, 主页则不显示
+  requiredFields: [] # 设置用户评论时必填的信息，[nick,mail]: [nick] | [nick, mail]
+  libUrl: # Set custom library cdn url
