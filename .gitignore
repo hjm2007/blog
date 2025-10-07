@@ -1,6 +1,5 @@
-.DS_Store
+*.deploy_git/
 db.json
-*.log
+*public/
+.git/
 node_modules/
-.deploy*/
-_multiconfig.yml

@@ -16,6 +16,7 @@
     "@waline/hexo-next": "^3.0.1",
     "hexo": "^8.0.0",
     "hexo-blog-encrypt": "^3.1.9",
+    "hexo-deployer-git": "^4.0.0",
     "hexo-filter-nofollow": "^2.0.2",
     "hexo-generator-archive": "^2.0.0",
     "hexo-generator-calendar": "github:theme-next/theme-next-calendar",
